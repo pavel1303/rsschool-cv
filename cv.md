@@ -11,10 +11,12 @@
 * **Telegram**: [jonybravo13](https://t.me/jonybravo13) 
 -----------------------------
 ### About Me
+
    I worked in the restaurant business for a long time, going from a line presence to a managerial position,
 but decided to change the field of activity, as my work ceased to bring me pleasure.
 I have been interested in the field of technology for a long time, and decided to start studying with Front-end development, as it combines creativity and programming, and allows you to create something new for the end user.
 I have been studying development for a year now, I recently completed Stage 0 from RS Shcool, and of course I continue to study.
+
 -----------------------------
 ### Skills
 * HTML
@@ -47,3 +49,11 @@ function decToHex(num){
   return res.join('').length === 2 ? res.join('') : `0${res.join('')}`;
 }
 ```
+-----------------------------
+### Education
+* **University**: Russian New University, Finance and credit
+* **Courses**: RS School Stage 0, RS School Stage 1(in progress)
+* **Books**: Head First O’Reilly Learning JavaScript Programming, The Modern JavaScript Tutorial
+-----------------------------
+### Language 
+* English: A2 Pre-Intermediate
