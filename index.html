@@ -6,94 +6,109 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Lebedev Pavel</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="main.css">
 </head>
 
-<body>
-   <header class="header">
-      <img class="header__logo" src="img/DSC_7876.jpg" alt="Lebedev Pavel Foto">
-      <h1 class="header__title">Lebedev Pavel</h1>
-      <h2 class="header__title-2">Junior Frontend Developer</h2>
-   </header>
-   <main class="main-content">
-      <section class="contacts">
-         <h2 class="contacts__title title">My Contact Info</h2>
-         <ul class="list">
-            <li class="list__item"><span class="list__span-bold">Address</span>: Moscow - Stupino</li>
-            <li class="list__item"><span class="list__span-bold">Phone</span>: 8-926-378-79-01</li>
-            <li class="list__item"><span class="list__span-bold">E-mail</span>: lebedpavel.dev@gmail.com</li>
-            <li class="list__item"><span class="list__span-bold">GitHub</span>: <a class="links"
-                  href="https://github.com/pavel1303">pavel1303</a></li>
-            <li class="list__item"><span class="list__span-bold">Codewars</span>: <a class="links"
-                  href="https://www.codewars.com/users/pavel1303">pavel1303</a></li>
-            <li class="list__item"><span class="list__span-bold">Address</span>: <a class="links"
-                  href="https://t.me/jonybravo13">jonybravo13</a></li>
-         </ul>
-      </section>
-      <section class="about">
-         <h2 class="about__title title">About me</h2>
-         <p class="about__text">I worked in the restaurant business for a long time, going from a line presence to a
-            managerial position, but decided to change the field of activity, as my work ceased to bring me pleasure. I
-            have been interested in the field of technology for a long time, and decided to start studying with
-            Front-end development, as it combines creativity and programming, and allows you to create something new for
-            the end user. I have been studying development for a year now, I recently completed Stage 0 from RS Shcool,
-            and of course I continue to study.</p>
-      </section>
-      <section class="skills">
-         <h2 class="skills__title title">Skills</h2>
-         <ul class="list">
-            <li class="list__item">HTML</li>
-            <li class="list__item">CSS</li>
-            <li class="list__item">JavaScript</li>
-            <li class="list__item">Git, GitHub</li>
-            <li class="list__item">VS Code</li>
-            <li class="list__item">Figma</li>
-         </ul>
-      </section>
-      <section class="code-example">
-         <h2 class="code-example__title title">Code Example</h2>
-         <a class="links" href="https://www.codewars.com/kata/513e08acc600c94f01000001">RGB To Hex Conversion</a>
-         <code class="code">
-            <pre class="code__content">
-               function rgb(r, g, b){
-                  return `${decToHex(r)}${decToHex(g)}${decToHex(b)}`
-                }
-                function decToHex(num){
-                  let res = [];
-                  if(num <= 0){
-                    return '00'
-                  } else if(num >= 255){
-                    return 'FF'
-                  } else {
-                    let alphabet = '0123456789ABCDEF';
-                    while(num){
-                    res.unshift(alphabet[num % 16]);
-                    num = Math.floor(num / 16);
-                  }
-                  }
-                  return res.join('').length === 2 ? res.join('') : `0${res.join('')}`;
-                }
-            </pre>
-         </code>
-      </section>
-      <section class="education">
-         <h2 class="education__title title">Education</h2>
-         <ul class="list">
-            <li class="list__item"><span class="list__span-bold">University</span>: Russian New University, Finance and
-               credit</li>
-            <li class="list__item"><span class="list__span-bold">Courses</span>: RS School Stage 0, RS School Stage 1(in
-               progress)</li>
-            <li class="list__item"><span class="list__span-bold">Books</span>: Head First O’Reilly Learning JavaScript
-               Programming, The Modern JavaScript Tutorial</li>
-         </ul>
-      </section>
-      <section class="language">
-         <h2 class="language__title title">Language</h2>
-         <ul class="list">
-            <li class="list__item"><span class="list__span-bold">English</span>: A2 Pre-Intermediate</li>
-         </ul>
-      </section>
-   </main>
+<body class="body">
+   <div class="cv">
+      <div class="cv__item--left">
+         <header class="header">
+            <img class="header__logo" src="img/DSC_7876.jpg" alt="Lebedev Pavel Foto">
+            <h1 class="header__title">Lebedev Pavel</h1>
+            <h2 class="header__title-2">Junior Frontend Developer</h2>
+         </header>
+         <main class="main-content">
+            <section class="contacts">
+               <h2 class="contacts__title title">My Contact Info</h2>
+               <ul class="list">
+                  <li class="list__item"><span class="list__span-bold">Address</span>: Moscow - Stupino</li>
+                  <li class="list__item"><span class="list__span-bold">Phone</span>: 8-926-378-79-01</li>
+                  <li class="list__item"><span class="list__span-bold">E-mail</span>: lebedpavel.dev@gmail.com</li>
+                  <li class="list__item"><span class="list__span-bold">GitHub</span>: <a class="links"
+                        href="https://github.com/pavel1303">pavel1303</a></li>
+                  <li class="list__item"><span class="list__span-bold">Codewars</span>: <a class="links"
+                        href="https://www.codewars.com/users/pavel1303">pavel1303</a></li>
+                  <li class="list__item"><span class="list__span-bold">Address</span>: <a class="links"
+                        href="https://t.me/jonybravo13">jonybravo13</a></li>
+               </ul>
+            </section>
+      </div>
+      <div class="cv__item--right">
+         <section class="about">
+            <h2 class="about__title title">About me</h2>
+            <p class="about__text">I worked in the restaurant business for a long time, going from a line presence to a
+               managerial position, but decided to change the field of activity, as my work ceased to bring me pleasure.
+               I
+               have been interested in the field of technology for a long time, and decided to start studying with
+               Front-end development, as it combines creativity and programming, and allows you to create something new
+               for
+               the end user. I have been studying development for a year now, I recently completed Stage 0 from RS
+               Shcool,
+               and of course I continue to study.</p>
+         </section>
+         <section class="skills">
+            <h2 class="skills__title title">Skills</h2>
+            <ul class="list">
+               <li class="list__item">HTML</li>
+               <li class="list__item">CSS</li>
+               <li class="list__item">JavaScript</li>
+               <li class="list__item">Git, GitHub</li>
+               <li class="list__item">VS Code</li>
+               <li class="list__item">Figma</li>
+            </ul>
+         </section>
+         <section class="code-example">
+            <h2 class="code-example__title title">Code Example</h2>
+            <a class="links" href="https://www.codewars.com/kata/513e08acc600c94f01000001">RGB To Hex Conversion</a>
+            <code class="code">
+                     <pre class="code__content">
+      function rgb(r, g, b){
+         return `${decToHex(r)}${decToHex(g)}${decToHex(b)}`
+         }
+         function decToHex(num){
+         let res = [];
+         if(num <= 0){
+            return '00'
+         } else if(num >= 255){
+            return 'FF'
+         } else {
+            let alphabet = '0123456789ABCDEF';
+            while(num){
+            res.unshift(alphabet[num % 16]);
+            num = Math.floor(num / 16);
+         }
+         }
+         return res.join('').length === 2 ? res.join('') : `0${res.join('')}`;
+         }
+                     </pre>
+                  </code>
+         </section>
+         <section class="education">
+            <h2 class="education__title title">Education</h2>
+            <ul class="list">
+               <li class="list__item"><span class="list__span-bold">University</span>: Russian New University, Finance
+                  and
+                  credit</li>
+               <li class="list__item"><span class="list__span-bold">Courses</span>: RS School Stage 0, RS School Stage
+                  1(in
+                  progress)</li>
+               <li class="list__item"><span class="list__span-bold">Books</span>: Head First O’Reilly Learning
+                  JavaScript
+                  Programming, The Modern JavaScript Tutorial</li>
+            </ul>
+         </section>
+         <section class="language">
+            <h2 class="language__title title">Language</h2>
+            <ul class="list">
+               <li class="list__item"><span class="list__span-bold">English</span>: A2 Pre-Intermediate</li>
+            </ul>
+         </section>
+         </main>
+      </div>
+   </div>
 </body>
 
 </html>
